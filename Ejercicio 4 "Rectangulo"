@@ -1,0 +1,29 @@
+class Rectangulo:
+    def __init__(self, largo, ancho):
+        self.largo = largo
+        self.ancho = ancho
+
+    def obtener_largo(self):
+        return self.largo
+
+    def establecer_largo(self, largo):
+        self.largo = largo
+
+    def obtener_ancho(self):
+        return self.ancho
+
+    def establecer_ancho(self, ancho):
+        self.ancho = ancho
+
+    def area(self):
+        return self.largo * self.ancho
+
+    def perimetro(self):
+        return 2 * (self.largo + self.ancho)
+
+
+if __name__ == "__main__":
+    r = Rectangulo(5, 3)
+
+    print("Área:", r.area())
+    print("Perímetro:", r.perimetro())
