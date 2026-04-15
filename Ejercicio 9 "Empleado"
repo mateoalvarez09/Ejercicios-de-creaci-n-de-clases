@@ -1,0 +1,27 @@
+class Empleado:
+    def __init__(self, nombre, edad, salario, cargo):
+        self.nombre = nombre
+        self.edad = edad
+        self.salario = salario
+        self.cargo = cargo
+
+    def obtener_nombre(self):
+        return self.nombre
+
+    def establecer_nombre(self, nombre):
+        self.nombre = nombre
+
+    def obtener_salario(self):
+        return self.salario
+
+    def establecer_salario(self, salario):
+        self.salario = salario
+
+    def salario_anual(self):
+        return self.salario * 12
+
+
+if __name__ == "__main__":
+    emp = Empleado("Luis", 35, 1000, "Gerente")
+
+    print("Salario anual:", emp.salario_anual())
