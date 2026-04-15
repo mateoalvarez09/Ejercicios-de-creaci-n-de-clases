@@ -1,0 +1,27 @@
+class Libro:
+    def __init__(self, titulo, autor, genero, paginas):
+        self.titulo = titulo
+        self.autor = autor
+        self.genero = genero
+        self.paginas = paginas
+
+    def obtener_titulo(self):
+        return self.titulo
+
+    def establecer_titulo(self, titulo):
+        self.titulo = titulo
+
+    def obtener_genero(self):
+        return self.genero
+
+    def establecer_genero(self, genero):
+        self.genero = genero
+
+    def es_ficcion(self):
+        return self.genero.lower() == "ficcion"
+
+
+if __name__ == "__main__":
+    l = Libro("Libro X", "Autor Y", "ficcion", 200)
+
+    print("¿Es ficción?", l.es_ficcion())
