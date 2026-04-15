@@ -1,0 +1,25 @@
+class Banco:
+    def __init__(self, nombre, interes):
+        self.nombre = nombre
+        self.interes = interes
+
+    def obtener_nombre(self):
+        return self.nombre
+
+    def establecer_nombre(self, nombre):
+        self.nombre = nombre
+
+    def obtener_interes(self):
+        return self.interes
+
+    def establecer_interes(self, interes):
+        self.interes = interes
+
+    def calcular_interes(self, dinero):
+        return dinero * self.interes
+
+
+if __name__ == "__main__":
+    b = Banco("Banco X", 0.1)
+
+    print("Interés:", b.calcular_interes(1000))
