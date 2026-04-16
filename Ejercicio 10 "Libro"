@@ -34,7 +34,7 @@ return self.genero.lower() == "ficcion"
 
 
 if __name__ == "__main__":
-l = Libro("Nahuel y las 10 orejas perdidas", "Nahuel Tiburcio", "ficcion", 200)
+l = Libro("Los 67", "Nahuel Tiburcio", "ficcion", 200)
 
 print("Titulo:", l.obtener_titulo())
 print("Autor:", l.obtener_autor())
