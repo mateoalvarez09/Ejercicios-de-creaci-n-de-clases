@@ -27,7 +27,7 @@ class Estudiante:
 
 
 if __name__ == "__main__":
-    e = Estudiante("Mateo", 17, "Ingeniería")
+    e = Estudiante("Mateo", 17, "Computacion")
 
     print("Nombre:", e.obtener_nombre())
     print("Promedio:", e.calcular_promedio([7, 8, 9]))
